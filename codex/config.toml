@@ -1,0 +1,29 @@
+# Append/merge this into ~/.codex/config.toml (global) or .codex/config.toml (project-scoped)
+
+[features]
+multi_agent = true
+
+[agents]
+max_threads = 5
+max_depth = 1
+job_max_runtime_seconds = 1800
+
+[agents.coding]
+description = "Implements features, fixes, and refactors per plan.md's declared stack."
+config_file = "agents/coding.toml"
+
+[agents.security-testing]
+description = "Read-only review of diffs for injection, XSS, broken auth, secrets, vulnerable deps. Use after coding finishes any change touching input, queries, auth, files, or dependencies."
+config_file = "agents/security-testing.toml"
+
+[agents.devops]
+description = "Owns CI/CD, build/lint/test automation, dependency scanning, release process."
+config_file = "agents/devops.toml"
+
+[agents.infrastructure]
+description = "Provisioning, environment topology, infrastructure-as-code. Use only for deployment/networking tasks."
+config_file = "agents/infrastructure.toml"
+
+[agents.documentation]
+description = "Maintains README, CHANGELOG, API docs. Use after coding and security-testing finish a task."
+config_file = "agents/documentation.toml"
