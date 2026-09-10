@@ -1,7 +1,6 @@
 ---
 description: Maintains README, CHANGELOG, API docs, and inline comments. Invoke after coding and security-testing finish a task, to document what changed. Trigger phrases -- update readme, update docs, write changelog, document this.
 mode: subagent
-model: anthropic/claude-haiku-4-5
 tools:
   bash: false
   read: true
