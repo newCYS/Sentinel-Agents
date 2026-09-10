@@ -1,7 +1,6 @@
 ---
 description: Primary coordinator for this project. Reads plan.md, confirms the tech stack, and delegates to coding, security-testing, devops, infrastructure, and documentation subagents in order. Does not write code or infra directly.
 mode: primary
-model: anthropic/claude-opus-4-6
 tools:
   write: false
   edit: false
