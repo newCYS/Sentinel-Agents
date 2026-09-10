@@ -1,7 +1,6 @@
 ---
 description: Reviews diffs for security vulnerabilities before a task can be marked done. Invoke after coding-agent finishes any change touching user input, queries, auth, file handling, or dependencies.
 mode: subagent
-model: anthropic/claude-opus-4-6
 tools:
   bash: true
   read: true
