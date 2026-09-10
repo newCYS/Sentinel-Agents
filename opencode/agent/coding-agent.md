@@ -1,7 +1,6 @@
 ---
 description: Implements features, fixes, and refactors according to the stack declared in plan.md. Invoke for any task requiring application source code changes.
 mode: subagent
-model: anthropic/claude-sonnet-4-6
 tools:
   bash: true
   read: true
