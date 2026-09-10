@@ -1,7 +1,6 @@
 ---
 description: Owns CI/CD pipelines, build/lint/test automation, dependency scanning, and release process. Invoke after security-testing clears a change, or for tasks specifically about pipelines or dependency management.
 mode: subagent
-model: anthropic/claude-sonnet-4-6
 tools:
   bash: true
   read: true
