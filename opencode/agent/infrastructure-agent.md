@@ -1,7 +1,6 @@
 ---
 description: Handles provisioning, environment topology, and infrastructure-as-code (Terraform, Kubernetes manifests, Docker Compose). Invoke only for tasks touching deployment environments, networking, or resource provisioning.
 mode: subagent
-model: anthropic/claude-sonnet-4-6
 tools:
   bash: true
   read: true
